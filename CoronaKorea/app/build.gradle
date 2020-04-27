@@ -70,4 +70,6 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.9.0'
     // circleProgessBar
     implementation 'com.dinuscxj:circleprogressbar:1.3.0'
+    // MPAAndroidChart 추가
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
