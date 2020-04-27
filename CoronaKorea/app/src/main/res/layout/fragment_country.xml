@@ -58,9 +58,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginLeft="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
                 android:text="국내 완치자 수: "
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -76,6 +76,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/country_li_linear2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -101,9 +102,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginStart="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:text="국내 격리자 수: "
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -118,6 +119,14 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/country_pc_piechart"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/country_li_linear2" />
 
         <ProgressBar
             android:id="@+id/pb_loading"
