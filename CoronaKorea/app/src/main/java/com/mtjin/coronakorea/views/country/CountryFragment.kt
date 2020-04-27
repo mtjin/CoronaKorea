@@ -21,6 +21,7 @@ class CountryFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_country, container, false)
         binding.vm = viewModel
+
         binding.lifecycleOwner = this
         return binding.root
     }

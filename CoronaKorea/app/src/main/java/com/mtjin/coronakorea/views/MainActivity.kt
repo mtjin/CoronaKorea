@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.mtjin.coronakorea.R
 import com.mtjin.coronakorea.databinding.ActivityMainBinding
+import com.mtjin.coronakorea.views.country.CountryFragment
 import me.ibrahimsn.lib.OnItemSelectedListener
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +23,9 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelect(pos: Int): Boolean {
                 Log.d(TAG, "" + pos)
                 when (pos) {
-
+                    0 -> supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_fl_container, CountryFragment())
+                        .commit()
                 }
                 return true
             }

@@ -12,6 +12,15 @@
         android:layout_height="match_parent"
         tools:context=".views.MainActivity">
 
+        <FrameLayout
+            android:id="@+id/main_fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/main_sb_bottombar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <me.ibrahimsn.lib.SmoothBottomBar
             android:id="@+id/main_sb_bottombar"
             android:layout_width="match_parent"
@@ -20,6 +29,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_fl_container"
             app:menu="@menu/bottom_menu" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
