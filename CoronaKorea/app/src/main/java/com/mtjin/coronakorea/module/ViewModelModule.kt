@@ -6,5 +6,5 @@ import org.koin.core.module.Module
 import org.koin.dsl.module
 
 val viewModelModule: Module = module {
-    viewModel { CountryViewModel() }
+    viewModel { CountryViewModel(get()) }
 }
