@@ -1,9 +1,9 @@
-package com.mtjin.coronakorea.data.korea
+package com.mtjin.coronakorea.data.city
 
 
 import com.google.gson.annotations.SerializedName
 
-data class KoreaResponse(
+data class CityResponse(
     @SerializedName("busan")
     val busan: Busan,
     @SerializedName("chungbuk")

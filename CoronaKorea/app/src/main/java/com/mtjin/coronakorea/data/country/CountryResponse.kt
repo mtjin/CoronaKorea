@@ -1,9 +1,9 @@
-package com.mtjin.coronakorea.data.total
+package com.mtjin.coronakorea.data.country
 
 
 import com.google.gson.annotations.SerializedName
 
-data class TotalResponse(
+data class CountryResponse(
     @SerializedName("caseCount")
     val caseCount: String,
     @SerializedName("casePercentage")

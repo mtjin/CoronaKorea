@@ -1,23 +1,23 @@
-package com.mtjin.coronakorea.data.korea
+package com.mtjin.coronakorea.data.city
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Busan(
+data class Gangwon(
     @SerializedName("countryName")
     val countryName: String,
-    @SerializedName("death")
+    @SerializedName("0death")
     val death: String,
-    @SerializedName("newCase")
+    @SerializedName("0newCase")
     val newCase: String,
-    @SerializedName("newCcase")
+    @SerializedName("0newCcase")
     val newCcase: String,
-    @SerializedName("newFcase")
+    @SerializedName("0newFcase")
     val newFcase: String,
-    @SerializedName("percentage")
+    @SerializedName("0percentage")
     val percentage: String,
-    @SerializedName("recovered")
+    @SerializedName("0recovered")
     val recovered: String,
-    @SerializedName("totalCase")
+    @SerializedName("0totalCase")
     val totalCase: String
 )

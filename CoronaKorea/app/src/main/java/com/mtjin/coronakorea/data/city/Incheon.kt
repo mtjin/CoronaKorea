@@ -1,9 +1,9 @@
-package com.mtjin.coronakorea.data.korea
+package com.mtjin.coronakorea.data.city
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Seoul(
+data class Incheon(
     @SerializedName("countryName")
     val countryName: String,
     @SerializedName("death")
