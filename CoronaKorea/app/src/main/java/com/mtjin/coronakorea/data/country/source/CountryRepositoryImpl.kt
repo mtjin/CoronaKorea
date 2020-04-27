@@ -13,8 +13,7 @@ class CountryRepositoryImpl(
     override fun getSearchCountry(success: (CountryResponse) -> Unit, fail: (Throwable) -> Unit) {
 
         if (networkManager.checkNetworkState()) {
-            //local
-            countryLocalDataSource.getCountry()?.let { success(it) }
+            //캐싱은 애니메이션 효과때문에 없는게 나은듯
             //remote
             countryRemoteDataSource.getCountry(
                 success = {
