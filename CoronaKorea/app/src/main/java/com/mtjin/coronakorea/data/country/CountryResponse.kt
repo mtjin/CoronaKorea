@@ -1,8 +1,11 @@
 package com.mtjin.coronakorea.data.country
 
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "corona")
 data class CountryResponse(
     @SerializedName("caseCount")
     val caseCount: String,
@@ -56,6 +59,7 @@ data class CountryResponse(
     val totalDeath: String,
     @SerializedName("TotalRecovered")
     val totalRecovered: String,
+    @PrimaryKey(autoGenerate = false)
     @SerializedName("updateTime")
     val updateTime: String
 )
