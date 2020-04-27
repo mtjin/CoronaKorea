@@ -16,6 +16,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initBinding()
         initListener()
+        initView()
+    }
+
+    private fun initView() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.main_fl_container, CountryFragment())
+            .commit()
     }
 
     private fun initListener() {

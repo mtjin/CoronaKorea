@@ -11,12 +11,23 @@ class CountryRepositoryImpl(
     private val networkManager: NetworkManager
 ) : CountryRepository {
     override fun getSearchCountry(success: (CountryResponse) -> Unit, fail: (Throwable) -> Unit) {
+
         if (networkManager.checkNetworkState()) {
             //local
-            val countryResponse = countryLocalDataSource.getCountry()
-            success(countryResponse)
+            countryLocalDataSource.getCountry()?.let { success(it) }
             //remote
-            countryRemoteDataSource
+            countryRemoteDataSource.getCountry(
+                success = {
+                    countryLocalDataSource.insertCountry(it)
+                    success(it)
+                },
+                fail = {
+                    fail(Throwable())
+                }
+            )
+        } else {
+            //local
+            countryLocalDataSource.getCountry()?.let { success(it) }
         }
     }
 

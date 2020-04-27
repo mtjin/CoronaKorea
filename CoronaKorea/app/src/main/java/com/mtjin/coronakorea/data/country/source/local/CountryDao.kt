@@ -12,5 +12,5 @@ interface CountryDao {
     fun insertCountry(country: CountryResponse)
 
     @Query("SELECT * FROM corona LIMIT 1")
-    fun getCountry(): CountryResponse
+    fun getCountry(): CountryResponse?
 }

@@ -7,7 +7,7 @@ class CountryLocalDataSourceImpl(private val countryDao: CountryDao) : CountryLo
         countryDao.insertCountry(country)
     }
 
-    override fun getCountry(): CountryResponse {
+    override fun getCountry(): CountryResponse? {
         return countryDao.getCountry()
     }
 
