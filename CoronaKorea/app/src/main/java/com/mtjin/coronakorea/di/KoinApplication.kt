@@ -2,9 +2,7 @@ package com.mtjin.coronakorea.di
 
 import android.app.Application
 import com.mtjin.coronakorea.BuildConfig
-import com.mtjin.coronakorea.module.apiModule
-import com.mtjin.coronakorea.module.localDataModule
-import com.mtjin.coronakorea.module.viewModelModule
+import com.mtjin.coronakorea.module.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -23,7 +21,10 @@ class KoinApplication : Application() {
             modules(
                 apiModule,
                 viewModelModule,
-                localDataModule
+                localDataModule,
+                remoteModule,
+                repositoryModule,
+                networkModule
             )
 
         }
