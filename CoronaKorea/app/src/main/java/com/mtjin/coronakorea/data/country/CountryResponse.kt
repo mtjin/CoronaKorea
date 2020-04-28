@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "corona")
+@Entity(tableName = "country")
 data class CountryResponse(
     @SerializedName("caseCount")
     val caseCount: String,
