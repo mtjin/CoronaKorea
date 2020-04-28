@@ -16,7 +16,6 @@ class CountryFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        initViewModelCallback()
         viewModel.requestCountry()
     }
 
@@ -29,11 +28,5 @@ class CountryFragment : Fragment() {
         binding.vm = viewModel
         binding.lifecycleOwner = this
         return binding.root
-    }
-
-    private fun initViewModelCallback() {
-        with(viewModel) {
-
-        }
     }
 }
