@@ -8,8 +8,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.mtjin.coronakorea.R
 import com.mtjin.coronakorea.databinding.FragmentCityBinding
-import com.mtjin.coronakorea.databinding.FragmentCountryBinding
-import com.mtjin.coronakorea.views.country.CountryViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class CityFragment : Fragment() {

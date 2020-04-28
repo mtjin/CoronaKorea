@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.mtjin.coronakorea.R
 import com.mtjin.coronakorea.databinding.ActivityMainBinding
+import com.mtjin.coronakorea.views.city.CityFragment
 import com.mtjin.coronakorea.views.country.CountryFragment
 import me.ibrahimsn.lib.OnItemSelectedListener
 
@@ -32,6 +33,9 @@ class MainActivity : AppCompatActivity() {
                 when (pos) {
                     0 -> supportFragmentManager.beginTransaction()
                         .replace(R.id.main_fl_container, CountryFragment())
+                        .commit()
+                    1 -> supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_fl_container, CityFragment())
                         .commit()
                 }
                 return true
