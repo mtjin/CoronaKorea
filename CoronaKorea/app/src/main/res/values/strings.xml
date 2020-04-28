@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CoronaKorea</string>
+    <string name="country_cure_rate_text">국내 완치율</string>
+    <string name="country_death_rate_text">국내 사망률</string>
+    <string name="etc_text">기타</string>
+    <string name="remain_text">나머지</string>
 </resources>
