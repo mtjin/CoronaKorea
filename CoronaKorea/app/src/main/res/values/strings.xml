@@ -4,4 +4,11 @@
     <string name="country_death_rate_text">국내 사망률</string>
     <string name="etc_text">기타</string>
     <string name="remain_text">나머지</string>
+    <string name="checking_text">검사중</string>
+    <string name="corona_positive_text">양성</string>
+    <string name="corona_negative_text">음성</string>
+    <string name="fragment_country_korona_confimer_text">국내 확진자 수:</string>
+    <string name="fragment_country_cure_num_text">국내 완치자 수:</string>
+    <string name="fragment_country_dead_num_text">국내 사망자 수:</string>
+    <string name="fragment_country_isolation_num_text">국내 격리자 수:</string>
 </resources>

@@ -124,3 +124,56 @@ fun PieChart.setCureOrDeadValuesChart(countryResponse: CountryResponse?) {
         data = pieData
     }
 }
+
+@BindingAdapter("setPositiveOrNegativeValues")
+fun PieChart.setPositiveOrNegativeValuesChart(countryResponse: CountryResponse?) {
+    countryResponse?.let {
+        setUsePercentValues(true)
+        description.isEnabled = false
+        setExtraOffsets(5f, 10f, 5f, 5f)
+        isDrawHoleEnabled = true
+        setHoleColor(Color.WHITE)
+        transparentCircleRadius = 61f
+
+        val yValues: ArrayList<PieEntry> = ArrayList()
+        with(yValues) {
+            add(
+                PieEntry(
+                    it.checkingPercentage.toFloat(),
+                    context.getString(R.string.checking_text)
+                )
+            )
+            add(
+                PieEntry(
+                    it.casePercentage.toFloat(),
+                    context.getString(R.string.corona_positive_text)
+                )
+            )
+            add(
+                PieEntry(
+                    it.notcasePercentage.toFloat(),
+                    context.getString(R.string.corona_negative_text)
+                )
+            )
+        }
+
+        animateY(1000, Easing.EaseInOutCubic)
+
+        val dataSet: PieDataSet = PieDataSet(yValues, "")
+        with(dataSet) {
+            sliceSpace = 3f
+            selectionShift = 5f
+            setColors(*ColorTemplate.MATERIAL_COLORS)
+        }
+
+        val pieData: PieData = PieData(dataSet)
+        with(pieData) {
+            setValueTextSize(10f)
+            setValueTextColor(Color.BLACK)
+            val des = Description()
+            des.text = "국내 검사결과"
+            description = des
+        }
+        data = pieData
+    }
+}
