@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="date_month">
+    <string-array name="cities">
         <item>busan</item>
         <item>chungbuk</item>
         <item>chungnam</item>
