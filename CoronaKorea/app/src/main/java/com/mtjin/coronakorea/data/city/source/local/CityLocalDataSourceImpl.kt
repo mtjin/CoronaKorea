@@ -1,4 +1,3 @@
 package com.mtjin.coronakorea.data.city.source.local
 
-class CityLocalDataSourceImpl : CityLocalDataSource {
-}
+class CityLocalDataSourceImpl(private val cityDao: CityDao) : CityLocalDataSource

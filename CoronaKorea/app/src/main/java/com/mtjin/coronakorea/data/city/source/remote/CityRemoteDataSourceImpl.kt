@@ -1,4 +1,6 @@
 package com.mtjin.coronakorea.data.city.source.remote
 
-class CityRemoteDataSourceImpl : CityRemoteDataSource {
+import com.mtjin.coronakorea.api.ApiInterface
+
+class CityRemoteDataSourceImpl(private val apiInterface: ApiInterface) : CityRemoteDataSource {
 }
