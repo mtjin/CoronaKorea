@@ -11,8 +11,8 @@ import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.utils.ColorTemplate
 import com.mtjin.coronakorea.data.country.CountryResponse
 
-@BindingAdapter("setValues")
-fun PieChart.setValuesChart(countryResponse: CountryResponse?) {
+@BindingAdapter("setTop5Values")
+fun PieChart.setTop5ValuesChart(countryResponse: CountryResponse?) {
     countryResponse?.let {
         setUsePercentValues(true)
         description.isEnabled = false

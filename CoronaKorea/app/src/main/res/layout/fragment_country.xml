@@ -132,7 +132,7 @@
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/country_li_linear2"
-                bind:setValues="@{vm.countryResponse}" />
+                bind:setTop5Values="@{vm.countryResponse}" />
 
             <com.github.mikephil.charting.charts.PieChart
                 android:id="@+id/country_pc_cure_or_dead"
