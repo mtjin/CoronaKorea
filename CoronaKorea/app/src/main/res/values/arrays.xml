@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="cities">
+        <item>korea</item>
         <item>seoul</item>
         <item>busan</item>
         <item>chungbuk</item>
@@ -17,7 +18,6 @@
         <item>jeju</item>
         <item>jeonbuk</item>
         <item>jeonnam</item>
-        <item>korea</item>
         <item>sejong</item>
         <item>ulsan</item>
     </string-array>

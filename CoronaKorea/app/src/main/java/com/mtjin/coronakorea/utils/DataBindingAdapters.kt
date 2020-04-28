@@ -2,6 +2,9 @@ package com.mtjin.coronakorea.utils
 
 import android.graphics.Color
 import android.util.Log
+import android.view.View
+import android.widget.AdapterView
+import androidx.appcompat.widget.AppCompatSpinner
 import androidx.databinding.BindingAdapter
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.PieChart
@@ -168,5 +171,3 @@ fun PieChart.setPositiveOrNegativeValuesChart(countryResponse: CountryResponse?)
         data = pieData
     }
 }
-
-//City
