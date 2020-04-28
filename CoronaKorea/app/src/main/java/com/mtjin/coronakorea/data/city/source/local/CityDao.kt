@@ -4,14 +4,13 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.mtjin.coronakorea.data.city.CityResponse
-import com.mtjin.coronakorea.data.country.CountryResponse
+import com.mtjin.coronakorea.data.city.Korea
 
 @Dao
 interface CityDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertCity(city: CityResponse)
+    fun insertKorea(korea: Korea)
 
-    @Query("SELECT * FROM city LIMIT 1")
-    fun getCountry(): CountryResponse?
+    @Query("SELECT * FROM korea LIMIT 1")
+    fun getKorea(): Korea?
 }

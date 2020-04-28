@@ -1,14 +1,9 @@
 package com.mtjin.coronakorea.data.city
 
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "city")
 data class CityResponse(
-    @PrimaryKey(autoGenerate = true)
-    val id: Int,
     @SerializedName("busan")
     val busan: Busan,
     @SerializedName("chungbuk")
