@@ -30,16 +30,6 @@ fun PieChart.setTop5ValuesChart(countryResponse: CountryResponse?) {
             add(PieEntry(it.city3p.toFloat(), it.city3n))
             add(PieEntry(it.city4p.toFloat(), it.city4n))
             add(PieEntry(it.city5p.toFloat(), it.city5n))
-            Log.d("BBB", "" + it.city1p.toFloat())
-            Log.d("BBB", "" + it.city2p.toFloat())
-            Log.d("BBB", "" + it.city3p.toFloat())
-            Log.d("BBB", "" + it.city4p.toFloat())
-            Log.d("BBB", "" + it.city5p.toFloat())
-            Log.d("BBB", "" + it.city1n)
-            Log.d("BBB", "" + it.city2n)
-            Log.d("BBB", "" + it.city3n)
-            Log.d("BBB", "" + it.city4n)
-            Log.d("BBB", "" + it.city5n)
             val remainPercent: Float =
                 100 - it.city1p.toFloat() - it.city2p.toFloat() - it.city3p.toFloat() - it.city4p.toFloat() - it.city5p.toFloat()
             if (remainPercent.toInt() != 0) {
