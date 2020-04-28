@@ -59,6 +59,8 @@ data class CountryResponse(
     val totalDeath: String,
     @SerializedName("TotalRecovered")
     val totalRecovered: String,
+    @SerializedName("TotalCaseBefore")
+    val totalCaseBefore: String,
     @PrimaryKey(autoGenerate = false)
     @SerializedName("updateTime")
     val updateTime: String

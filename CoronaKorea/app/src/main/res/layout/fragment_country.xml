@@ -160,6 +160,7 @@
                 android:id="@+id/country_li_linear3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -169,10 +170,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:text="검사중 : "
+                    android:layout_marginStart="4dp"
+                    android:text="@string/checking_now_text"
                     android:textColor="@color/colorGreen"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -180,15 +181,15 @@
                     android:layout_height="wrap_content"
                     android:text="@{vm.countryResponse.checkingCounter}"
                     android:textColor="@color/colorGreen"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:text="검사결과 양성 : "
+                    android:layout_marginStart="4dp"
+                    android:text="@string/inspection_result_positive_text"
                     android:textColor="@color/colorOrange"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -201,10 +202,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:text="검사결과 음성 : "
+                    android:layout_marginStart="4dp"
+                    android:text="@string/inspection_result_negative_text"
                     android:textColor="@color/colorRed"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -220,9 +221,10 @@
                 android:id="@+id/country_tv_total_checked_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="총 검사완료 수"
-                android:textSize="14dp"
+                android:text="@string/inspection_result_complete_text"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/country_li_linear3" />
@@ -230,8 +232,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{vm.countryResponse.totalChecking"
-                android:textSize="14dp"
+                android:layout_marginStart="6dp"
+                android:text="@{vm.countryResponse.totalChecking}"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@id/country_tv_total_checked_num"
                 app:layout_constraintTop_toTopOf="@id/country_tv_total_checked_num" />
 
@@ -239,9 +243,10 @@
                 android:id="@+id/country_tv_total_recovered_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
-                android:text="총 검사완료 수"
-                android:textSize="14dp"
+                android:text="@string/today_cure_complete_text"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/country_tv_total_checked_num" />
@@ -249,10 +254,56 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{vm.countryResponse.totalRecovered"
-                android:textSize="14dp"
+                android:layout_marginStart="6dp"
+                android:text="@{vm.countryResponse.totalRecovered}"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@id/country_tv_total_recovered_num"
                 app:layout_constraintTop_toTopOf="@id/country_tv_total_recovered_num" />
+
+            <TextView
+                android:id="@+id/country_tv_total_death_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/today_death_num_text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/country_tv_total_recovered_num" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@{vm.countryResponse.totalDeath}"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/country_tv_total_death_num"
+                app:layout_constraintTop_toTopOf="@id/country_tv_total_death_num" />
+
+            <TextView
+                android:id="@+id/country_tv_total_relative_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/today_relative_num_text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/country_tv_total_death_num" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@{vm.countryResponse.totalCaseBefore}"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/country_tv_total_relative_num"
+                app:layout_constraintTop_toTopOf="@id/country_tv_total_relative_num" />
 
             <ProgressBar
                 android:id="@+id/pb_loading"
