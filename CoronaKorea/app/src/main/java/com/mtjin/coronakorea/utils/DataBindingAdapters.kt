@@ -13,6 +13,7 @@ import com.github.mikephil.charting.utils.ColorTemplate
 import com.mtjin.coronakorea.R
 import com.mtjin.coronakorea.data.country.CountryResponse
 
+//Country
 @BindingAdapter("setTop5Values")
 fun PieChart.setTop5ValuesChart(countryResponse: CountryResponse?) {
     countryResponse?.let {
@@ -167,3 +168,5 @@ fun PieChart.setPositiveOrNegativeValuesChart(countryResponse: CountryResponse?)
         data = pieData
     }
 }
+
+//City
