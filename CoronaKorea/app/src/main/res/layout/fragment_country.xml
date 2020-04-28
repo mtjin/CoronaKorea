@@ -132,7 +132,7 @@
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/country_li_linear2"
-                bind:setTop5Values="@{vm.countryResponse}" />
+                bind:top5Values="@{vm.countryResponse}" />
 
             <com.github.mikephil.charting.charts.PieChart
                 android:id="@+id/country_pc_cure_or_dead"
@@ -143,7 +143,7 @@
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/country_pc_top5city"
-                bind:setCureOrDeadValues="@{vm.countryResponse}" />
+                bind:cureOrDeadValues="@{vm.countryResponse}" />
 
             <com.github.mikephil.charting.charts.PieChart
                 android:id="@+id/country_pc_positive_or_negative"
@@ -154,7 +154,7 @@
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/country_pc_cure_or_dead"
-                bind:setPositiveOrNegativeValues="@{vm.countryResponse}" />
+                bind:positiveOrNegativeValues="@{vm.countryResponse}" />
 
             <LinearLayout
                 android:id="@+id/country_li_linear3"

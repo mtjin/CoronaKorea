@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="cities">
+        <item>선택</item>
         <item>korea</item>
         <item>seoul</item>
         <item>busan</item>
@@ -9,7 +10,6 @@
         <item>daegu</item>
         <item>daejeon</item>
         <item>gangwon</item>
-        <item>gwangwon</item>
         <item>gwangju</item>
         <item>gyeongbuk</item>
         <item>gyeonggi</item>

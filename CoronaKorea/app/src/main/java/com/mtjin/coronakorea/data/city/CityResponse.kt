@@ -33,7 +33,7 @@ data class CityResponse(
     @SerializedName("jeonnam")
     val jeonnam: Jeonnam,
     @SerializedName("korea")
-    val korea: Korea,
+    var korea: Korea,
     @SerializedName("quarantine")
     val quarantine: Quarantine,
     @SerializedName("resultCode")
@@ -43,7 +43,7 @@ data class CityResponse(
     @SerializedName("sejong")
     val sejong: Sejong,
     @SerializedName("seoul")
-    val seoul: Seoul,
+    var seoul: Seoul,
     @SerializedName("ulsan")
     val ulsan: Ulsan
 )
