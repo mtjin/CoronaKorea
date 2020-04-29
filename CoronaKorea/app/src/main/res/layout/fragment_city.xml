@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:text="지역을 선택해주세요"
+                android:text="@string/city_select_location_text"
                 android:textColor="@color/colorRed"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -48,7 +48,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="신규확진환자수: "
+                    android:text="@string/city_newcase_num_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -71,7 +71,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="확진환자 수: "
+                    android:text="@string/city_totalcase_num_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -94,7 +94,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="완치자 수: "
+                    android:text="@string/city_recovered_num_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -117,7 +117,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="사망자: "
+                    android:text="@string/city_death_num_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -140,7 +140,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="발생률: "
+                    android:text="@string/city_percentage_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -163,7 +163,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="전일대비증감-해외유입: "
+                    android:text="@string/city_newfcase_num_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 
@@ -186,7 +186,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="전일대비증감-지역발생: "
+                    android:text="@string/city_newccase_num_text"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp" />
 

@@ -21,4 +21,12 @@
     <string name="menu_total_stat_title_text">전체 통계</string>
     <string name="menu_local_stat_title_text">지역별 통계</string>
     <string name="menu_ready_title_text">준비중</string>
+    <string name="city_select_location_text">지역을 선택해주세요</string>
+    <string name="city_newcase_num_text">신규확진환자수:</string>
+    <string name="city_totalcase_num_text">확진환자 수:</string>
+    <string name="city_recovered_num_text">완치자 수:</string>
+    <string name="city_death_num_text">사망자:</string>
+    <string name="city_percentage_text">발생률:</string>
+    <string name="city_newfcase_num_text">전일대비증감-해외유입:</string>
+    <string name="city_newccase_num_text">전일대비증감-지역발생:</string>
 </resources>
