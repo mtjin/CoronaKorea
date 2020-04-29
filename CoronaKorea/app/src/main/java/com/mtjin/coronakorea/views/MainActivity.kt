@@ -1,46 +1,29 @@
 package com.mtjin.coronakorea.views
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.mtjin.coronakorea.R
 import com.mtjin.coronakorea.databinding.ActivityMainBinding
-import com.mtjin.coronakorea.views.city.CityFragment
-import com.mtjin.coronakorea.views.country.CountryFragment
-import me.ibrahimsn.lib.OnItemSelectedListener
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         initBinding()
-        initListener()
-        initView()
+        initNavigation()
     }
 
-    private fun initView() {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.main_fl_container, CountryFragment())
-            .commit()
-    }
-
-    private fun initListener() {
-        binding.mainSbBottombar.setOnItemSelectedListener(object : OnItemSelectedListener {
-            override fun onItemSelect(pos: Int): Boolean {
-                Log.d(TAG, "" + pos)
-                when (pos) {
-                    0 -> supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_fl_container, CountryFragment())
-                        .commit()
-                    1 -> supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_fl_container, CityFragment())
-                        .commit()
-                }
-                return true
-            }
-        })
+    private fun initNavigation() {
+        val navController = findNavController(R.id.main_nav_host)
+        binding.mainBottomNavigation.setupWithNavController(navController)
+        // 위와 같은 2번째 방법
+//        NavigationUI.setupWithNavController(
+//            main_bottom_navigation,
+//            findNavController(R.id.main_nav_host)
+//        )
     }
 
     private fun initBinding() {

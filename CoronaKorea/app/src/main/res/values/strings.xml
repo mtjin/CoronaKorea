@@ -18,4 +18,7 @@
     <string name="today_cure_complete_text">오늘 하루 완치자 수:</string>
     <string name="today_death_num_text">오늘 하루 사망자수:</string>
     <string name="today_relative_num_text">전날 대비 환자수:</string>
+    <string name="menu_total_stat_title_text">전체 통계</string>
+    <string name="menu_local_stat_title_text">지역별 통계</string>
+    <string name="menu_ready_title_text">준비중</string>
 </resources>

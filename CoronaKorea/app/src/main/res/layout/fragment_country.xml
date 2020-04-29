@@ -311,10 +311,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:visibility="@{vm.isLoading() ? View.VISIBLE : View.GONE}"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/country_pc_top5city"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/country_pc_cure_or_dead" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </layout>

@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/item0"
+        android:id="@+id/countryFragment"
         android:icon="@drawable/ic_statistics_white_24dp"
-        android:title="전체 통계" />
+        android:title="@string/menu_total_stat_title_text" />
 
     <item
-        android:id="@+id/item1"
+        android:id="@+id/cityFragment"
         android:icon="@drawable/ic_city_white_24dp"
-        android:title="지역별 통계" />
+        android:title="@string/menu_local_stat_title_text" />
 
     <item
-        android:id="@+id/item2"
-        android:icon="@drawable/ic_statistics_white_24dp"
-        android:title="준비중" />
+        android:id="@+id/updateFragment"
+        android:icon="@drawable/ic_update_white_24dp"
+        android:title="@string/menu_ready_title_text" />
 
 </menu>

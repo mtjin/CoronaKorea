@@ -17,6 +17,7 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".views.MainActivity">
+            <nav-graph android:value="@navigation/bottom_nav_graph"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
