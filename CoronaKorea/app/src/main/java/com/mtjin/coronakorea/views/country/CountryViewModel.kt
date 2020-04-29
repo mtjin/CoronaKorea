@@ -20,18 +20,19 @@ class CountryViewModel(private val countryRepository: CountryRepository) : ViewM
         _isLoading.value = true
         countryRepository.getSearchCountry(
             success = {
-                Log.d(TAG, ""+it)
+                Log.d(TAG, "" + it)
                 _countryResponse.value = it
                 _isLoading.value = false
             },
             fail = {
-                Log.d(TAG, ""+it)
+                Log.d(TAG, "" + it)
+                _toastMsg.value = it.toString()
                 _isLoading.value = false
             }
         )
     }
 
-    companion object{
+    companion object {
         const val TAG = "CountryViewModelT"
     }
 }

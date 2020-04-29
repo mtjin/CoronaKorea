@@ -29,4 +29,5 @@
     <string name="city_percentage_text">발생률:</string>
     <string name="city_newfcase_num_text">전일대비증감-해외유입:</string>
     <string name="city_newccase_num_text">전일대비증감-지역발생:</string>
+    <string name="network_err_toast_msg">네트워크 연결이 끊켜있습니다.</string>
 </resources>
