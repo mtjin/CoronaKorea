@@ -27,6 +27,7 @@ class CountryRepositoryImpl(
         } else {
             //local
             countryLocalDataSource.getCountry()?.let { success(it) }
+            fail(Throwable())
         }
     }
 
